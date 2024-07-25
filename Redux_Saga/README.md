@@ -50,8 +50,12 @@ tamamlanmasından sonra Redux state'ini güncellemek için kullanılır. <code>y
 
 ### Genel Özet 
 
-• **Redux Store:** redux/store.js dosyasında oluşturur ve saga middleware'imizi ekliyoruz. 
-• **Reducer:** redux/reducers/userReducer.js dosyasında kullanıcı verilerini yöneten bir reducer tanımlıyoruz. 
-• **Saga:** redux/sagas/userSaga.js dosyasında kullanıcı verilerini çeken bir saga tanımlanıyoruz. 
-• **Bileşenler:** components/UserDisplay.jsx ve components/ErrorDisplay.jsx dosyalarında kullanıcı bilgilerini ve hata mesajlarını gösteren bileşenler tanımlanıyoruz.  
-• **Ana Bileşen:** App.jsx dosyasında ana uygulama bileşeni tanımlıyoruz. Bu bileşen, kullanıcı verilerini çekmek için bir buton sağlıyor ve kullanıcı bilgilerini, hata mesajlarını ve yükleme durumunu kullanıcıya gösteriyoruz.
+- **Redux Store:** redux/store.js dosyasında oluşturur ve saga middleware'imizi ekliyoruz. 
+
+- **Reducer:** redux/reducers/userReducer.js dosyasında kullanıcı verilerini yöneten bir reducer tanımlıyoruz. 
+
+- **Saga:** redux/sagas/userSaga.js dosyasında kullanıcı verilerini çeken bir saga tanımlanıyoruz. 
+
+- **Bileşenler:** components/UserDisplay.jsx ve components/ErrorDisplay.jsx dosyalarında kullanıcı bilgilerini ve hata mesajlarını gösteren bileşenler tanımlanıyoruz.  
+
+- **Ana Bileşen:** App.jsx dosyasında ana uygulama bileşeni tanımlıyoruz. Bu bileşen, kullanıcı verilerini çekmek için bir buton sağlıyor ve kullanıcı bilgilerini, hata mesajlarını ve yükleme durumunu kullanıcıya gösteriyoruz.
