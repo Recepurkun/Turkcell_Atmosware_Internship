@@ -13,7 +13,7 @@ yield 'World'; } </code>
 Peki bu fonksiyonu nasıl durdurabiliriz? O da yield anahtar kelimesi ile. yield, bir generator fonksiyonunun çalışmasını duraklatır ve değeri dışarıya döndürür. Daha sonra, generator fonksiyonu yeniden başlatıldığında, kaldığı yerden devam eder.
 * Generator fonksiyonları, diğer fonksiyonlardan farklı olarak değer döndürmek yerine bir iterator nesnesi döner ve bu nesne, ***next()*** metodu kullanılarak generator'un bir sonraki değeri hesaplamasına olanak tanır.
  
-Küçük bir örnek: 
+Küçük bir örnek: <br>
 ![generatorfunctionkod](public/generatorfunction_kod.png) ![generatorfunctioncikti](public/generatorfunction_cikti.png)
 
 - Burada yield 5 olarak tanimladigimiz bizim value değerimiz oluyor. 
@@ -27,17 +27,17 @@ Küçük bir örnek:
 ***Redux saga içerisinde bulunan call, put, takeLatest nedir ve neden kullanılır?***
 Redux-Saga, `call`, `put`, ve `takeLatest` gibi efektler kullanarak side effectleri yönetir. Bu effectler, generator fonksiyonları içinde yield ile kullanılarak belirli işlemleri gerçekleştirir.  
 
-* **Call efekti:** Bir fonksiyonun çağrılmasını ve bu fonksiyonun sonucunun elde edilmesini sağlar. Genellikle asenkron işlemler (örneğin, API çağrıları) için kullanılır. call, fonksiyonun yürütülmesini bekler ve sonucu döndürür. 
-<code>const user = yield call(axios.get, `https://jsonplaceholder.typicode.com/users/${action.payload.userId}`)</code>
-<br>
+* **Call efekti:** Bir fonksiyonun çağrılmasını ve bu fonksiyonun sonucunun elde edilmesini sağlar. Genellikle asenkron işlemler (örneğin, API çağrıları) için kullanılır. call, fonksiyonun yürütülmesini bekler ve sonucu döndürür. <code>const user = yield call(axios.get, `https://jsonplaceholder.typicode.com/users/${action.payload.userId}`)</code> <br>
 * **Put efekti:** Redux store'a bir aksiyon dispatch etmek için kullanılır. Bu, saga'nın 
-tamamlanmasından sonra Redux state'ini güncellemek için kullanılır.
-<code>yield put({ type: "USER_FETCH_FAILED", message: err.message }) </code>
-<br>
+tamamlanmasından sonra Redux state'ini güncellemek için kullanılır. <code>yield put({ type: "USER_FETCH_FAILED", message: err.message }) </code> <br>
 * **takeLatest efekti:** Belirtilen aksiyon türüne sahip en son başlatılan işlemi izler ve sadece en son başlatılan işlemi yürütür. Önceki işlemler iptal edilir. 
 <code>yield takeLatest("USER_FETCH_REQUESTED", fetchUser) </code>
 
+<br>
+
 > Bunları artık öğrendiğimize göre basit bir react uygulaması oluşturarak kod üzerinde görelim.
+
+<br>
 
 * Öncelikle `npm create vite` komutu ile react projemizi oluşturalım 
 * Daha sonra gerekli olan paketleri yükleyelim
