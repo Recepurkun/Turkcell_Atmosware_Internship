@@ -1,8 +1,6 @@
 ### Atmosware Stajımda Geliştirdiğim Projeler
 * Staj sürecim boyunca Redux-Saga, Charts ve Cypress teknolojileri ile derinlemesine araştırma yaptım ve bilgi birikimimi geliştirdim. Ayrıca, Firebase entegrasyonu ile final projemi tamamladım.
 
-<br>
-
 #### Final Projesi
 Bu proje, Redux-Saga, Charts, Cypress ve Firebase kullanılarak geliştirilmiştir.
 
